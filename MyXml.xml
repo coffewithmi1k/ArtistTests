@@ -4,6 +4,7 @@
     <test name="Nopackage" >
         <classes>
             <class name="userTests.TestClass" />
+            <class name="userTests.TestFeature1"/>
         </classes>
     </test>
 </suite>
