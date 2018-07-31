@@ -24,10 +24,14 @@ public class HomePage extends PageNavigator {
     }
 
     @Step("User clicks Become an Artist")
-    public void checkHeaderBecomeAnArtist(){
+    public SignUpPage checkHeaderBecomeAnArtist(){
         driver.findElement(By.cssSelector("#navbarTopContent > ul > li:nth-child(1) > a")).click();
         Assert.assertTrue(driver.findElement(By.cssSelector("#signup-form > div > div > div.modal-header > div")).getText()
         .contains("Sign Up"));
+        return new SignUpPage(driver);
+
     }
+
+   
 
 }
